@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Spline from '@splinetool/react-spline'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -12,10 +11,10 @@ function SkillSlider(){
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: true
+    autoplay: false
   }
   return (
-    <Container>
+
       
       <CarComponent>
       <h1 className="Header" >
@@ -56,32 +55,23 @@ function SkillSlider(){
         
         </Carousel>
       </CarComponent>
-        
-        
-    </Container>
   )
 }
 
 export default SkillSlider
 
-const Container=styled.div`
-background: rgb(24, 27, 26);
-height: 100vh;
-overflow-x: hidden;
-
-
-`
 const CarComponent=styled.div`
 height: 380px;
+position: relative;
 width: 60%;
-margin: auto;
+margin: -70px auto -320px;
 overflow-x: hidden;
 background-image: linear-gradient(45deg, rgba(44, 115, 210, 0.8), rgba(124, 94, 221, 0.8), rgba(222, 34, 94, 0.8));
 border-radius: 30px;
-backdrop-filter: blur(8px);
+//backdrop-filter: blur(8px);
 padding: 4px;
 align-item:center;
-z-index: -1;
+z-index: 0;
 .Header{
   color: rgb(256, 256, 256);
   margin-left: 45%; 

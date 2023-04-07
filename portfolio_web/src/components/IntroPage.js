@@ -27,7 +27,8 @@ const Wrapper=styled.div`
 
 const Container=styled.div`
 height: 100vh;
-position: relative;
+position: realtive;
+z-index: -1;
 overflow-x: hidden;
  display: flex;
  

@@ -59,6 +59,7 @@ display: flex;
 align-items: center;
 padding: 0 36px;
 overflow-x: hidden;
+z-index: 2;
 `
 const Style=styled.div`
 font-family: 'Do Hyeon', sans-serif;

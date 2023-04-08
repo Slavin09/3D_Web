@@ -54,7 +54,7 @@ background:rgb(120, 80, 178, 0.3);
 backdrop-filter: blur(20px);
 position: fixed;
 border-radius: 20px;
-margin: 1% 20% 0% ;
+margin: 1% 18% 0% ;
 display: flex;
 align-items: center;
 padding: 0 36px;
@@ -158,4 +158,3 @@ const UserImg=styled.img`
 height: 48px;
 border-radius: 50px;
 `
-//rgb(238, 165, 246)

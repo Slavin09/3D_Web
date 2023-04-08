@@ -3,22 +3,31 @@ import styled from 'styled-components'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useInView } from 'react-intersection-observer';
 
-function SkillSlider(){
+
+function Skills(){
   let settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false
+    autoplay: true
   }
+
+
+  const { ref, inView } = useInView({
+    threshold: 0.7,
+  });
+
   return (
 
-      
-      <CarComponent>
+      //{inView ? '': "hidden"}
+      <CarComponent inView={inView} ref={ref} className={inView ? '': "hidden"}>
       <h1 className="Header" >
-        Skills
+        Skills<strong>{inView.toString()}</strong>
+
       </h1>
       <Carousel{...settings}>
         <Wrap>
@@ -34,6 +43,18 @@ function SkillSlider(){
         </Wrap>
         
         <Wrap>
+          <img src='./images/Untitled@6-214x189.png'/>
+        </Wrap>
+        
+        <Wrap>
+          <img src='./images/Cloud@1-214x189.png'/>
+        </Wrap>
+
+        <Wrap>
+          <img src='./images/Machine Learning@1-214x189.png'/>
+        </Wrap>
+
+        <Wrap>
           Bla Bla
         </Wrap>
         
@@ -41,14 +62,6 @@ function SkillSlider(){
           Bla Bla
         </Wrap>
 
-        <Wrap>
-          Bla Bla
-        </Wrap>
-
-        <Wrap>
-          Bla Bla
-        </Wrap>
-        
         <Wrap>
           Bla Bla
         </Wrap>
@@ -57,21 +70,23 @@ function SkillSlider(){
       </CarComponent>
   )
 }
-
-export default SkillSlider
+export default Skills
 
 const CarComponent=styled.div`
 height: 380px;
 position: relative;
 width: 60%;
-margin: -70px auto -320px;
+margin: -150px auto -240px;
 overflow-x: hidden;
-background-image: linear-gradient(45deg, rgba(44, 115, 210, 0.8), rgba(124, 94, 221, 0.8), rgba(222, 34, 94, 0.8));
+background-image: linear-gradient(45deg, rgba(44, 115, 210, 0.7), rgba(124, 94, 221, 0.7), rgba(222, 34, 94, 0.7));
+box-shadow: -8px 10px 10px 9px rgb(0, 0, 0, 0.20);
 border-radius: 30px;
-//backdrop-filter: blur(8px);
+backdrop-filter: blur(8px);
 padding: 4px;
 align-item:center;
-z-index: 0;
+z-index: 1;
+transition: all 0.2s;
+
 .Header{
   color: rgb(256, 256, 256);
   margin-left: 45%; 
@@ -115,5 +130,5 @@ img{
     &:hover{
         border: 4px solid rgb(249, 249, 249, 0.8);
     }
-  `
+    `
 

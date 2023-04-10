@@ -4,8 +4,9 @@ import Spline from '@splinetool/react-spline'
 
 function Resume() {
   return (
-    <Container className='Gradient'>  
-      <Spline scene="https://draft.spline.design/LGlKpkSEqkho7hmW/scene.splinecode" />
+    <Container className='Gradient'>
+      
+      <Spline scene="https://draft.spline.design/DNI4V44ENwrl8fhc/scene.splinecode" />
     </Container>
   )
 }
@@ -16,6 +17,7 @@ const Container=styled.div`
 background-image: linear-gradient(to bottom, rgba(45, 30, 71, 1), rgba(45, 30, 71, 1), rgba(45, 30, 71, 0.95), rgba(45, 30, 71, 0));
 height: 100vh;
 overflow-x: hidden;
+overflow-y: hidden;
 position: relative;
 
 
@@ -30,3 +32,4 @@ position: relative;
   z-index: -1;
  }
 `
+

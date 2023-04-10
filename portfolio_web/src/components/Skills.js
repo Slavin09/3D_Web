@@ -18,7 +18,7 @@ function Skills(){
 
 
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 1,
   });
 
   return (
@@ -26,7 +26,7 @@ function Skills(){
       //{inView ? '': "hidden"}
       <CarComponent inView={inView} ref={ref} className={inView ? '': "hidden"}>
       <h1 className="Header" >
-        Skills<strong>{inView.toString()}</strong>
+        Skills
 
       </h1>
       <Carousel{...settings}>
@@ -125,10 +125,14 @@ const Wrap=styled.div`
 
 img{
   height: 250px;
+  margin: auto;
   
 }
     &:hover{
-        border: 4px solid rgb(249, 249, 249, 0.8);
+        //border: 4px solid rgb(249, 249, 249, 0.8);
+        background-color: rgb(0, 0, 0, 0.1);
+        transform: scale(95%);
+
     }
     `
 

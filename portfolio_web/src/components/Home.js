@@ -6,9 +6,8 @@ import IntroPage from './IntroPage'
 
 function Home() {
   return (
-        <Container>
+        <Container id='Home'>
             <IntroPage/>
-          
         </Container>
   )
 }

@@ -1,3 +1,27 @@
+/*---Skills---*/
 .hidden{
     opacity: 0;
   }
+
+/*---Project---*/
+.Reveal{
+  width: 80%;
+}
+
+/* ---Smooth Scroll---*/
+html{
+  scroll-behavior: smooth;
+}
+
+
+/*---Scroll Bar---*/
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: rgb(30, 30, 30);
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(rgb(55, 86, 170, 0.7), rgb(138, 68, 153, 0.7));
+  border-radius: 10px;
+}

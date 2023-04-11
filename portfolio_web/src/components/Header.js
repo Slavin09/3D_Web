@@ -11,27 +11,27 @@ function Header(){
                  </a>
             </Style>
             <NavMenu>
-            <a>
+            <a href='#Home'>
                 <span>HOME</span>
 
             </a>
-            <a>
+            <a href='#Skills'>
                 <span>SKILLS</span>
 
             </a>
-            <a>
-                <span>RESUME</span>
+            <a href='#Resume'>
+                <span>TIMELINE</span>
 
             </a>
-            <a>
-                <span>PROJECTS</span>
+            <a href='#Code'>
+                <span>PRESPICACITY</span>
 
             </a>
-            <a>
+            <a href='#Extra'>
                 <span>EXTRA</span>
 
             </a>
-            <a>
+            <a href='#Contact'>
                 <span>CONTACT</span>
 
             </a>
@@ -77,6 +77,7 @@ a{
     align-items: center;
     padding: 0 10px;
     cursor: poiner;
+    text-decoration: none;
     span {
         font-size: 110%;
         letter-spacing: 1.30px;

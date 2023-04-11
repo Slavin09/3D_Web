@@ -4,7 +4,7 @@ import Spline from '@splinetool/react-spline'
 
 function Resume() {
   return (
-    <Container className='Gradient'>
+    <Container id='Resume' className='Gradient'>
       
       <Spline scene="https://draft.spline.design/DNI4V44ENwrl8fhc/scene.splinecode" />
     </Container>
@@ -30,6 +30,17 @@ position: relative;
   right: 0;
   left: 0;
   z-index: -1;
+ }
+
+ &:after{
+  content: "";
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom,  rgb(38, 38, 38, 0),rgb(38, 38, 38, 0), rgb(38, 38, 38, 1));
+
  }
 `
 

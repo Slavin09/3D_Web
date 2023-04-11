@@ -10,7 +10,7 @@ function IntroPage() {
             
             <Intro>
               <h2>Hi,<br/> I am Vinayak Puitandy.</h2>
-              <p className='About'>CSE Undergrad with a never ending love for Problem Solving and a burning passion for development. I am also a budding musician :) I love talking to new people and discuss about new ideas and projects. I have recently started with DevOps and loving it since.</p>
+              <p id='Skills' className='About'>CSE Undergrad with a never ending love for Problem Solving and a burning passion for development. I am also a budding musician :) I love talking to new people and discuss about new ideas and projects. I have recently started with DevOps and loving it since.</p>
             </Intro>
             <Header/>
             <Spline className="spline" scene="https://draft.spline.design/c2vSp3mgf-e6b1xe/scene.splinecode" />

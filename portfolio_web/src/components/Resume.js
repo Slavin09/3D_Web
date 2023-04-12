@@ -4,10 +4,12 @@ import Spline from '@splinetool/react-spline'
 
 function Resume() {
   return (
-    <Container id='Resume' className='Gradient'>
+    <div data-scroll>
+    <Container data-scroll id='Resume' className='Gradient' >
       
-      <Spline scene="https://draft.spline.design/DNI4V44ENwrl8fhc/scene.splinecode" />
+      <Spline data-scroll data-scroll-speed="4" scene="https://draft.spline.design/DNI4V44ENwrl8fhc/scene.splinecode" />
     </Container>
+    </div>
   )
 }
 

@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 function Header(){
     return(
-        <Nav>
+        <NavSec>
+        <Nav className="is-stuck">
             <UserImg src="/images/UserImg.jpg" alt='User Image'/>
             <Style>
                  <a>
@@ -42,24 +43,39 @@ function Header(){
                 </a>
             </Download>
         </Nav>
+        </NavSec>
     )
 }
 
 export default Header
+
+const NavSec=styled.div`
+height: 300px;
+width: 100%;
+z-index: 3;
+opacity: 0;
+transition: 200ms;
+position: fixed;
+
+&:hover{
+    opacity: 1;
+}
+`
 
 const Nav=styled.nav`
 height:70px;
 width: 60%;
 background:rgb(120, 80, 178, 0.3);
 backdrop-filter: blur(20px);
-position: fixed;
+
 border-radius: 20px;
-margin: 1% 18% 0% ;
+margin: 10px 18% 0% ;
 display: flex;
 align-items: center;
 padding: 0 36px;
 overflow-x: hidden;
 z-index: 2;
+
 `
 const Style=styled.div`
 font-family: 'Do Hyeon', sans-serif;

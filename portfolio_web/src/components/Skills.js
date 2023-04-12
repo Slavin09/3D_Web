@@ -18,13 +18,13 @@ function Skills(){
 
 
   const { ref, inView } = useInView({
-    threshold: 1,
+    threshold: 0.5,
   });
 
   return (
 
       //{inView ? '': "hidden"}
-      <CarComponent inView={inView} ref={ref} className={inView ? '': "hidden"}>
+      <CarComponent data-scroll data-scroll-speed="2" inView={inView} ref={ref} className={inView ? '': "hidden"}>
       <h1 className="Header" >
         Skills
 

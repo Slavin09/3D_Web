@@ -1,14 +1,22 @@
 import React from 'react'
 import './App.css'
+import Header from './components/Header'
 import Parent from './components/Parent';
-import Projects from './components/Projects';
-
+import LocomotiveScroll from 'locomotive-scroll';
+import { useEffect } from 'react';
 
 function App() {
+useEffect(() => {
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
+}, []);
+
   return (
-    <div className="App">
+    <div data-scroll-container className="App">
+      <Header/>
         <Parent/>
-        <Projects/>
     </div>
   );
 }

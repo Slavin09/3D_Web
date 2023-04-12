@@ -1,18 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
-import Header from './Header'
 import Spline from '@splinetool/react-spline'
 
 function IntroPage() {
   return (
-    <Wrapper>
-      <Container>
+    <Wrapper >
+      <Container >
             
-            <Intro>
-              <h2>Hi,<br/> I am Vinayak Puitandy.</h2>
-              <p id='Skills' className='About'>CSE Undergrad with a never ending love for Problem Solving and a burning passion for development. I am also a budding musician :) I love talking to new people and discuss about new ideas and projects. I have recently started with DevOps and loving it since.</p>
+            <Intro >
+              <h2 data-scroll data-scroll-speed="2">Hi,<br/> I am Vinayak Puitandy.</h2>
+              <p data-scroll data-scroll-speed="2" id='Skills' className='About'>CSE Undergrad with a never ending love for Problem Solving and a burning passion for development. I am also a budding musician :) I love talking to new people and discuss about new ideas and projects. I have recently started with DevOps and loving it since.</p>
             </Intro>
-            <Header/>
             <Spline className="spline" scene="https://draft.spline.design/c2vSp3mgf-e6b1xe/scene.splinecode" />
             
     </Container>

@@ -10,10 +10,10 @@ function Projects() {
       });
 
   return (
-    <Container id='Code'>
+    <Container data-scroll data-scroll-speed="5" id='Code' >
         <CodeS>
             <Info>
-                <h3>Coding Skills</h3>
+                <h3 className="Topper">Coding Skills</h3>
             </Info>
         </CodeS>
         <Github inView={inView} ref={ref} className={inView ? '': 'Reveal'}>
@@ -33,14 +33,12 @@ function Projects() {
 
 export default Projects
 const Container=styled.div`
-height: 100vh;
+height: 120vh;
 background-image: linear-gradient(to bottom, rgb(38, 38, 38, 1), rgba(0, 0, 0, 1));
 display: flex;
-position: absolute;
-top: 300;
-right: 0;
-left: 0;
-right: 0;
+margin-top: -375px;
+overflow-y: hidden;
+z-index: 20;
 `
 const CodeS=styled.div`
 position: relative; 
@@ -51,6 +49,14 @@ top: 132px;
 left: 40px;
 width: 55%;
 transition: 0.6s;
+
+.Topper{
+    color: rgb(35, 35, 35);
+    margin-left: 45%;
+    font-size: 160%;
+    font-family: 'Do Hyeon', sans-serif;
+    letter-spacing: 2px;
+}
 
 &:hover{
     transform: scale(96%);
@@ -67,7 +73,7 @@ padding: 10px;
 height: 400px;
 width: 50%;
 max-width: 95%;
-background-color: rgb(229, 224, 236);
+background-color: rgb(239, 239, 239);
 border-radius: 90px;
 position: relative;
 top: 97px;
